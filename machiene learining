@@ -1,0 +1,7 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+features = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'heartdisease']
+dataset_1 = pd.read_csv("cleveland.csv"   ,  names = features)
+dataset_2 = pd.read_csv("hungary.csv"     ,  names = features)
+dataset_3 = pd.read_csv("switzerland.csv" ,  names = features)
