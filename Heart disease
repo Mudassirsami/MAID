@@ -5,3 +5,12 @@ features = ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach',
 dataset_1 = pd.read_csv("cleveland.csv"   ,  names = features)
 dataset_2 = pd.read_csv("hungary.csv"     ,  names = features)
 dataset_3 = pd.read_csv("switzerland.csv" ,  names = features)
+dataset_1.head()
+dataset_2.head()
+dataset_3.head()
+dataset_1.shape
+dataset_2.shape
+dataset_3.shape
+datatemp = [dataset_1, dataset_2, dataset_3]
+data = pd.concat(datatemp)
+data
